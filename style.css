@@ -1,10 +1,25 @@
-/*Color Variables*/
+/*COLOR VARIABLES*/
 :root{
     --c-grey: #272727;
+    --c-purple: #481f8a;
     --c-watercolor: #60d3cd;
 }
 
-/*General Style*/
+/*Image size fixed*/
+#logo-size{
+    width: 100px;
+    height: 100px;
+}
+
+#me-size img{
+    object-fit: cover; /*pra nao perder definição*/
+    height: 300px;
+    width: 300px;
+    border-radius: 25%;
+    box-shadow: 5px 5px 300px var(--c-watercolor);
+}
+
+/*GENERAL STYLE*/
 *{
     margin: 0;
     padding: 0;
@@ -17,17 +32,22 @@ body{
     height: 100vh; /*ocupar todo o espaco da tela*/
 }
 
-#logo-size{
-    width: 100px;
-    height: 100px;
-}
-
 .interface{
     max-width: 1280px;
     margin: 0 auto; /*Centralizar na tela*/
 }
 
-/*Header Style*/
+.flex{
+    display: flex; /*Divide as divs em formato horizontal onde se aplica essa classe*/
+}
+
+h2.title{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*HEADER STYLE*/
 header{
     padding: 40px 4%; /*1: em cima e embaixo || 2: esquerda e direita, quando a tela diminuir fara com que nao cole no canto da tela*/
 }
@@ -43,6 +63,7 @@ header a{
     text-decoration: none;
     display: inline-block; /*Adiciona a propriedade de block level apra links || OBS: Tambem funciona para o botao pois possui link dentro*/
     transition: .2s; /*Define a velocidade com que o texto que tem a propriedade transform ira aumentar*/
+    font-size: 20px;
 }
 
 header a:hover{
@@ -59,7 +80,7 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .btn-contact button{ 
+header .btn-header button{ 
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -69,6 +90,99 @@ header .btn-contact button{
     cursor: pointer;
 }
 
-header .btn-contact button:hover{ 
+header .btn-header button:hover{ 
     box-shadow: 0px 0px 8px var(--c-watercolor); 
 }
+
+/*TOP OF THE SITE STYLE*/
+
+section.top-of-site{
+    padding: 40px 4%;
+}
+
+section.top-of-site .flex{  /*Alinha os itens que eu tiver na section com a classe topo do site e .flex*/
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.top-of-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 50px;
+}
+
+.top-of-site h1 span{
+    color: var(--c-watercolor);
+}
+
+.top-of-site .txt-top-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+main .btn-contact button{ 
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--c-watercolor);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+main a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block; /*Adiciona a propriedade de block level apra links || OBS: Tambem funciona para o botao pois possui link dentro*/
+    transition: .2s; /*Define a velocidade com que o texto que tem a propriedade transform ira aumentar*/
+}
+
+main a:hover{
+    color: #fff;
+    transform: scale(1.05); /*Propriedade so funciona para elementos que sao block-level(possui propriedades como width, height e transform)*/
+}
+
+main .btn-contact button:hover{ 
+    box-shadow: 0px 0px 8px var(--c-watercolor); 
+}
+
+.top-of-site .img-top-site{
+    position: relative; 
+    animation: toFloat 2s ease-in-out infinite alternate; /*Propriedades: 1: tempo de duração | 2: define a suavidade e velocidade | 3: ficar infinitamente funcionando | 4: faz com que quando chegue até 100 volte para o 0 suavemente também*/
+}
+
+@keyframes toFloat{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*SKILLS STYLE*/
+
+section.skills{
+    padding: 40px 4%;
+}
+
+section.skills .flex{
+    gap: 60px;
+}
+
+.skills .skills-box{
+    color:  white;
+    padding: 40px 40px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-top: 95px;
+    padding: 5px 15px;
+}
+
+.skills .skills-box i{
+    font-size: 70px;
+    color: var(--c-watercolor);
+}
+
+

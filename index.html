@@ -8,35 +8,107 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
-        <div class="interface"> <!--classe que vai limitar os limites do site-->
+        <div class="interface">
+            <!--classe que vai limitar os limites do site-->
             <div class="logo">
                 <a href="#">
                     <img id="logo-size" src="img/logo-cb.png" alt="">
                 </a>
-            </div><!--logo-->
+            </div>
+            <!--logo-->
 
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="http://">Inicio</a></li>
-                    <li><a href="http://">Especialidades</a></li>
+                    <li><a href="http://">Habilidades</a></li>
                     <li><a href="http://">Sobre</a></li>
                     <li><a href="http://">Projetos</a></li>
                 </ul>
             </nav>
 
-            <div class="btn-contact">
+            <div class="btn-header">
                 <a href="http://">
                     <button>Contato</button>
                 </a>
             </div>
-        </div><!--intefcade-->
+        </div>
+        <!--intefcade-->
     </header>
+    <main>
+        <!--Só pode existir um main por página -->
+        <section class="top-of-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-top-site">
+                        <h1>
+                            Olá, eu sou</br>
+                            <span>Caio Braga</span>
+                        </h1>
+                        <p>
+                            Engenheiro de Software Full Stack com uma sólida formação em projetar, desenvolver e
+                            implantar inovadoras aplicações e serviços web. Proficiente em utilizar uma ampla gama de
+                            tecnologias para criar soluções eficientes e escaláveis. Habilidoso tanto em desenvolvimento
+                            front-end quanto back-end, com uma atenção especial para criar experiências de usuário
+                            fluidas.
+
+                            Tecnologias:
+
+                            .NET Core(C#) | Spring Boot | Java | JavaScript
+                            Microserviços | APIs RESTful
+                            SQL | PostgreSQL
+                            Git | Docker
+                            Apaixonado por enfrentar desafios complexos e colaborar com equipes multifuncionais para
+                            levar projetos desde a concepção até a implementação bem-sucedida. Comprometido com a
+                            aprendizagem contínua e manter-se atualizado com as tendências da indústria. Aberto a novas
+                            oportunidades que me permitam contribuir com minha expertise para projetos impactantes.
+                        </p>
+                        <div class="btn-contact">
+                            <a href="#">
+                                <button>
+                                    Entre em contato
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="img-top-site">
+                        <div id="me-size">
+                            <img src="img/eu.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="interface">
+                <h2 class="title">HABILIDADES</h2>
+                <div class="flex">
+                    <div class="skills-box">
+                        <i class="bi bi-filetype-java"></i>
+                    </div>
+                    <div class="skills-box">
+                        <i class="bi bi-filetype-cs"></i>
+                    </div>
+                    <div class="skills-box">
+                        <i class="bi bi-filetype-html"></i>
+                    </div>
+                    <div class="skills-box">
+                        <i class="bi bi-filetype-css"></i>
+                    </div>
+                    <div class="skills-box">
+                        <i class="bi bi-filetype-js"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
