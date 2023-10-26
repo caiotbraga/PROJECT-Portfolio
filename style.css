@@ -1,0 +1,74 @@
+/*Color Variables*/
+:root{
+    --c-grey: #272727;
+    --c-watercolor: #60d3cd;
+}
+
+/*General Style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*mantem todos os componentes na mesma borda da pagina*/
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: var(--c-grey);
+    height: 100vh; /*ocupar todo o espaco da tela*/
+}
+
+#logo-size{
+    width: 100px;
+    height: 100px;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto; /*Centralizar na tela*/
+}
+
+/*Header Style*/
+header{
+    padding: 40px 4%; /*1: em cima e embaixo || 2: esquerda e direita, quando a tela diminuir fara com que nao cole no canto da tela*/
+}
+
+header > .interface{ /*Indica que so ira fazer modificacoes na tag header onde tiver classe interface*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block; /*Adiciona a propriedade de block level apra links || OBS: Tambem funciona para o botao pois possui link dentro*/
+    transition: .2s; /*Define a velocidade com que o texto que tem a propriedade transform ira aumentar*/
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05); /*Propriedade so funciona para elementos que sao block-level(possui propriedades como width, height e transform)*/
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contact button{ 
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--c-watercolor);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contact button:hover{ 
+    box-shadow: 0px 0px 8px var(--c-watercolor); 
+}
