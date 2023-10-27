@@ -21,6 +21,13 @@
     box-shadow: 5px 5px 300px var(--c-watercolor);
 }
 
+#me-rio img{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: px;
+}
+
 /*GENERAL STYLE*/
 *{
     margin: 0;
@@ -194,6 +201,30 @@ section.skills .skills-flex{
     transform: scale(1.05);
     box-shadow: 0px 0px 30px var(--c-shadow-skills);
     cursor: pointer;
+}
+
+/*ABOUT STYLE*/
+
+section.about{
+    padding: 40px 4%;
+}
+
+.about .txt-about{
+    color: #fff;
+}
+
+section.about .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.about .txt-about h2{
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.about .txt-about h2 span{
+    color: var(--c-watercolor);
 }
 
 
