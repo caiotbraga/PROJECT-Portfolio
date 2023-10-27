@@ -1,8 +1,10 @@
 /*COLOR VARIABLES*/
 :root{
-    --c-grey: #272727;
+    /*--c-grey: #272727;*/
+    --c-grey: #1a1818;
     --c-purple: #481f8a;
     --c-watercolor: #60d3cd;
+    --c-shadow-skills: #292828;
 }
 
 /*Image size fixed*/
@@ -167,22 +169,31 @@ section.skills{
     padding: 40px 4%;
 }
 
-section.skills .flex{
-    gap: 60px;
+section.skills .skills-flex{
+    gap: 90px;
 }
 
 .skills .skills-box{
     color:  white;
-    padding: 40px 40px;
-    border: 2px solid #fff;
+    border: 2px solid var(--c-shadow-skills);
     border-radius: 20px;
     margin-top: 95px;
     padding: 5px 15px;
-}
-
-.skills .skills-box i{
     font-size: 70px;
     color: var(--c-watercolor);
+    transition: .2s;
+}
+
+.skills-flex{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.skills .skills-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px var(--c-shadow-skills);
+    cursor: pointer;
 }
 
 
