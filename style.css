@@ -279,3 +279,57 @@ section.portfolio .flex .img-port{
 .overlay:hover{
     opacity: 1;
 }
+
+/*FORM STYLE*/
+
+section.form{
+    padding: 60px 4%;
+}
+
+form{
+    max-width: 500px; /*Setando a largura máxima da largura do meu formulário para 500px*/
+    margin: 0 auto; /*Centralizando o meu formulário no centro da tela*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.form .title span{
+    color: var(--c-watercolor);
+}
+
+form input, form textarea{
+    width: 100%; /*Faz com que todos os inputs ocupem uma largura de 100% dentro do meu formulário.*/
+    background-color: rgba(64, 62, 62, 0.321);
+    border: 0;
+    outline: 0; /*Linha que fica quando clica no input*/
+    padding: 20px 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none; /*Faz com que o textarea não seja manipulado pelo usuário*/
+    height: 200px;
+}
+
+form .btn-send{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-send input[type=submit]{ /*Definir o tipo do input*/
+    width: 120px;
+    background-color: var(--c-watercolor);
+    color: var(--c-grey);
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-send input[type=submit]:hover{
+    box-shadow: 0px 0px 8px var(--c-watercolor);
+    transform: scale(1.05);
+}
