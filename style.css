@@ -333,3 +333,38 @@ form .btn-send input[type=submit]:hover{
     box-shadow: 0px 0px 8px var(--c-watercolor);
     transform: scale(1.05);
 }
+
+/*RESPONSIVIDADE */
+
+@media screen and (max-width: 903px){
+
+    /*GENERAL CLASSES*/
+    .top-of-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    /*HEADER*/
+    .menu-desktop, .btn-header{
+        display: none;
+    }
+
+    /*TOP OF THE SITE*/
+
+    section.top-of-site{
+        padding: 20px 8%;
+    }
+
+    .top-of-site h1{
+        font-size: 32px;
+    }
+
+    #me-size img{
+        height: 240px;
+        width: 240px;
+    }
+
+}
