@@ -1,5 +1,5 @@
 /*COLOR VARIABLES*/
-:root{
+:root {
     /*--c-grey: #272727;*/
     --c-grey: #1a1818;
     --c-purple: #481f8a;
@@ -8,20 +8,21 @@
 }
 
 /*Image size fixed*/
-#logo-size{
+#logo-size {
     width: 100px;
     height: 100px;
 }
 
-#me-size img{
-    object-fit: cover; /*pra nao perder definição*/
+#me-size img {
+    object-fit: cover;
+    /*pra nao perder definição*/
     height: 300px;
     width: 300px;
     border-radius: 25%;
     box-shadow: 5px 5px 300px var(--c-watercolor);
 }
 
-#me-rio img{
+#me-rio img {
     width: 400px;
     height: 500px;
     border-radius: 20px;
@@ -29,67 +30,76 @@
 }
 
 /*GENERAL STYLE*/
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*mantem todos os componentes na mesma borda da pagina*/
+    box-sizing: border-box;
+    /*mantem todos os componentes na mesma borda da pagina*/
     font-family: 'Oswald', sans-serif;
 }
 
-body{
+body {
     background-color: var(--c-grey);
-    height: 100vh; /*ocupar todo o espaco da tela*/
+    height: 100vh;
+    /*ocupar todo o espaco da tela*/
 }
 
-.interface{
+.interface {
     max-width: 1280px;
-    margin: 0 auto; /*Centralizar na tela*/
+    margin: 0 auto;
+    /*Centralizar na tela*/
 }
 
-.flex{
-    display: flex; /*Divide as divs em formato horizontal onde se aplica essa classe*/
+.flex {
+    display: flex;
+    /*Divide as divs em formato horizontal onde se aplica essa classe*/
 }
 
-h2.title{
+h2.title {
     color: white;
     font-size: 40px;
     text-align: center;
 }
 
 /*HEADER STYLE*/
-header{
-    padding: 40px 4%; /*1: em cima e embaixo || 2: esquerda e direita, quando a tela diminuir fara com que nao cole no canto da tela*/
+header {
+    padding: 40px 4%;
+    /*1: em cima e embaixo || 2: esquerda e direita, quando a tela diminuir fara com que nao cole no canto da tela*/
 }
 
-header > .interface{ /*Indica que so ira fazer modificacoes na tag header onde tiver classe interface*/
+header>.interface {
+    /*Indica que so ira fazer modificacoes na tag header onde tiver classe interface*/
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a{
+header a {
     color: #7d7d7d;
     text-decoration: none;
-    display: inline-block; /*Adiciona a propriedade de block level apra links || OBS: Tambem funciona para o botao pois possui link dentro*/
-    transition: .2s; /*Define a velocidade com que o texto que tem a propriedade transform ira aumentar*/
+    display: inline-block;
+    /*Adiciona a propriedade de block level apra links || OBS: Tambem funciona para o botao pois possui link dentro*/
+    transition: .2s;
+    /*Define a velocidade com que o texto que tem a propriedade transform ira aumentar*/
     font-size: 20px;
 }
 
-header a:hover{
+header a:hover {
     color: #fff;
-    transform: scale(1.05); /*Propriedade so funciona para elementos que sao block-level(possui propriedades como width, height e transform)*/
+    transform: scale(1.05);
+    /*Propriedade so funciona para elementos que sao block-level(possui propriedades como width, height e transform)*/
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
-header .btn-header button{ 
+header .btn-header button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -99,38 +109,39 @@ header .btn-header button{
     cursor: pointer;
 }
 
-header .btn-header button:hover{ 
-    box-shadow: 0px 0px 8px var(--c-watercolor); 
+header .btn-header button:hover {
+    box-shadow: 0px 0px 8px var(--c-watercolor);
 }
 
 /*TOP OF THE SITE STYLE*/
 
-section.top-of-site{
+section.top-of-site {
     padding: 40px 4%;
 }
 
-section.top-of-site .flex{  /*Alinha os itens que eu tiver na section com a classe topo do site e .flex*/
+section.top-of-site .flex {
+    /*Alinha os itens que eu tiver na section com a classe topo do site e .flex*/
     align-items: center;
     justify-content: center;
     gap: 120px;
 }
 
-.top-of-site h1{
+.top-of-site h1 {
     color: #fff;
     font-size: 42px;
     line-height: 50px;
 }
 
-.top-of-site h1 span{
+.top-of-site h1 span {
     color: var(--c-watercolor);
 }
 
-.top-of-site .txt-top-site p{
+.top-of-site .txt-top-site p {
     color: #fff;
     margin: 40px 0;
 }
 
-main .btn-contact button{ 
+main .btn-contact button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -140,48 +151,53 @@ main .btn-contact button{
     cursor: pointer;
 }
 
-main a{
+main a {
     color: #7d7d7d;
     text-decoration: none;
-    display: inline-block; /*Adiciona a propriedade de block level apra links || OBS: Tambem funciona para o botao pois possui link dentro*/
-    transition: .2s; /*Define a velocidade com que o texto que tem a propriedade transform ira aumentar*/
+    display: inline-block;
+    /*Adiciona a propriedade de block level apra links || OBS: Tambem funciona para o botao pois possui link dentro*/
+    transition: .2s;
+    /*Define a velocidade com que o texto que tem a propriedade transform ira aumentar*/
 }
 
-main a:hover{
+main a:hover {
     color: #fff;
-    transform: scale(1.05); /*Propriedade so funciona para elementos que sao block-level(possui propriedades como width, height e transform)*/
+    transform: scale(1.05);
+    /*Propriedade so funciona para elementos que sao block-level(possui propriedades como width, height e transform)*/
 }
 
-main .btn-contact button:hover{ 
-    box-shadow: 0px 0px 8px var(--c-watercolor); 
+main .btn-contact button:hover {
+    box-shadow: 0px 0px 8px var(--c-watercolor);
 }
 
-.top-of-site .img-top-site{
-    position: relative; 
-    animation: toFloat 2s ease-in-out infinite alternate; /*Propriedades: 1: tempo de duração | 2: define a suavidade e velocidade | 3: ficar infinitamente funcionando | 4: faz com que quando chegue até 100 volte para o 0 suavemente também*/
+.top-of-site .img-top-site {
+    position: relative;
+    animation: toFloat 2s ease-in-out infinite alternate;
+    /*Propriedades: 1: tempo de duração | 2: define a suavidade e velocidade | 3: ficar infinitamente funcionando | 4: faz com que quando chegue até 100 volte para o 0 suavemente também*/
 }
 
-@keyframes toFloat{
-    0%{
+@keyframes toFloat {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /*SKILLS STYLE*/
 
-section.skills{
+section.skills {
     padding: 40px 4%;
 }
 
-section.skills .skills-flex{
+section.skills .skills-flex {
     gap: 90px;
 }
 
-.skills .skills-box{
-    color:  white;
+.skills .skills-box {
+    color: white;
     border: 2px solid var(--c-shadow-skills);
     border-radius: 20px;
     margin-top: 95px;
@@ -191,13 +207,13 @@ section.skills .skills-flex{
     transition: .2s;
 }
 
-.skills-flex{
+.skills-flex {
     display: flex;
     justify-content: center;
     gap: 200px;
 }
 
-.skills .skills-box:hover{
+.skills .skills-box:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 30px var(--c-shadow-skills);
     cursor: pointer;
@@ -205,68 +221,71 @@ section.skills .skills-flex{
 
 /*ABOUT STYLE*/
 
-section.about{
+section.about {
     padding: 40px 4%;
 }
 
-.about .txt-about{
+.about .txt-about {
     color: #fff;
 }
 
-section.about .flex{
+section.about .flex {
     align-items: center;
     gap: 60px;
 }
 
-.about .txt-about h2{
+.about .txt-about h2 {
     font-size: 40px;
     line-height: 45px;
 }
 
-.about .txt-about h2 span{
+.about .txt-about h2 span {
     color: var(--c-watercolor);
 }
 
 /*PORTFOLIO STYLE*/
 
-section.portfolio{
+section.portfolio {
     padding: 60px 4%;
     box-shadow: 0 0 40px 10px #ffffff0e;
 
 }
 
-section.portfolio .flex{
+section.portfolio .flex {
     justify-content: space-around;
 }
 
-section.portfolio .flex .img-port{
+section.portfolio .flex .img-port {
     margin-top: 60px;
 }
 
-.img-port{
+.img-port {
     width: 330px;
     height: 460px;
-    background-size: cover; /*Cobrir 100% da imagem passada ajustada a div.*/
+    background-size: cover;
+    /*Cobrir 100% da imagem passada ajustada a div.*/
     background-position: 0% 100%;
     transition: 5s;
     cursor: pointer;
     border-radius: 40px;
-    position: relative; /*Combinando o position relative faz com que a div filha que tiver o position absolute so trabalhe dentro dela*/
+    position: relative;
+    /*Combinando o position relative faz com que a div filha que tiver o position absolute so trabalhe dentro dela*/
 }
 
-.img-port:hover{
+.img-port:hover {
     background-position: 100% 100%;
 }
 
-.overlay{
+.overlay {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #00000059;
     border-radius: 40px;
-    display: flex; /*Combinando com as 2 propriedades abaixo irá colocar o texto no meio*/
+    display: flex;
+    /*Combinando com as 2 propriedades abaixo irá colocar o texto no meio*/
     align-items: center;
     justify-content: center;
     font-size: 24px;
@@ -276,19 +295,21 @@ section.portfolio .flex .img-port{
     transition: 0.5s;
 }
 
-.overlay:hover{
+.overlay:hover {
     opacity: 1;
 }
 
 /*FORM STYLE*/
 
-section.form{
+section.form {
     padding: 60px 4%;
 }
 
-form{
-    max-width: 500px; /*Setando a largura máxima da largura do meu formulário para 500px*/
-    margin: 0 auto; /*Centralizando o meu formulário no centro da tela*/
+form {
+    max-width: 500px;
+    /*Setando a largura máxima da largura do meu formulário para 500px*/
+    margin: 0 auto;
+    /*Centralizando o meu formulário no centro da tela*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -296,32 +317,37 @@ form{
     margin-top: 50px;
 }
 
-.form .title span{
+.form .title span {
     color: var(--c-watercolor);
 }
 
-form input, form textarea{
-    width: 100%; /*Faz com que todos os inputs ocupem uma largura de 100% dentro do meu formulário.*/
+form input,
+form textarea {
+    width: 100%;
+    /*Faz com que todos os inputs ocupem uma largura de 100% dentro do meu formulário.*/
     background-color: rgba(64, 62, 62, 0.321);
     border: 0;
-    outline: 0; /*Linha que fica quando clica no input*/
+    outline: 0;
+    /*Linha que fica quando clica no input*/
     padding: 20px 15px;
     border-radius: 8px;
     color: #fff;
     font-size: 18px;
 }
 
-form textarea{
-    resize: none; /*Faz com que o textarea não seja manipulado pelo usuário*/
+form textarea {
+    resize: none;
+    /*Faz com que o textarea não seja manipulado pelo usuário*/
     height: 200px;
 }
 
-form .btn-send{
+form .btn-send {
     margin-top: 20px;
     text-align: center;
 }
 
-form .btn-send input[type=submit]{ /*Definir o tipo do input*/
+form .btn-send input[type=submit] {
+    /*Definir o tipo do input*/
     width: 120px;
     background-color: var(--c-watercolor);
     color: var(--c-grey);
@@ -329,42 +355,96 @@ form .btn-send input[type=submit]{ /*Definir o tipo do input*/
     transition: .2s;
 }
 
-form .btn-send input[type=submit]:hover{
+form .btn-send input[type=submit]:hover {
     box-shadow: 0px 0px 8px var(--c-watercolor);
     transform: scale(1.05);
 }
 
 /*RESPONSIVIDADE */
 
-@media screen and (max-width: 903px){
+@media screen and (max-width: 903px) {
 
     /*GENERAL CLASSES*/
-    .top-of-site .flex{
+    .top-of-site .flex {
         flex-direction: column-reverse;
     }
 
-    .flex{
+    .flex {
         flex-direction: column;
     }
 
     /*HEADER*/
-    .menu-desktop, .btn-header{
+    .menu-desktop,
+    .btn-header {
         display: none;
     }
 
     /*TOP OF THE SITE*/
 
-    section.top-of-site{
+    section.top-of-site .flex {
+        gap: 55px;
+    }
+
+    #me-size img {
+        height: 240px;
+        width: 240px;
+        box-shadow: 5px 5px 50px var(--c-watercolor);
+        margin-top: -30px;
+    }
+
+    section.top-of-site {
         padding: 20px 8%;
     }
 
-    .top-of-site h1{
+    .top-of-site h1 {
         font-size: 32px;
     }
 
-    #me-size img{
-        height: 240px;
-        width: 240px;
+    .btn-contact {
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
+    section.about {
+        padding: 20px 8%;
+        margin-bottom: 40px;
+    }
+
+    #me-rio img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 1289px) {
+    .skills-flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    h2.title {
+        margin-bottom: 40px;
+    }
+
+    .skills .skills-box {
+        color: white;
+        border: 2px solid var(--c-shadow-skills);
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 5px 15px;
+        font-size: 70px;
+        color: var(--c-watercolor);
+        transition: .2s;
+    }
+
+    section.portfolio .flex {
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
 }
