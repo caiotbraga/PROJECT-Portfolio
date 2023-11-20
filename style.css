@@ -447,4 +447,8 @@ form .btn-send input[type=submit]:hover {
         justify-content: center;
         align-items: center;
     }
+
+    .about .txt-about h2{
+        text-align: center;
+    }
 }
