@@ -1,11 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Adiciona o evento de clique para todos os links do menu
+document.addEventListener("DOMContentLoaded", function () {
     var links = document.querySelectorAll("nav a");
-    links.forEach(function(link) {
+    links.forEach(function (link) {
         link.addEventListener("click", scrollSmooth);
     });
 
-    // Função para rolar suavemente para a seção correspondente
     function scrollSmooth(e) {
         e.preventDefault();
         var targetId = this.getAttribute("href").substring(1);
@@ -14,4 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
             behavior: "smooth"
         });
     }
+});
+
+function toggleRedesSociais() {
+    var btnText = document.getElementById('btn-header');
+    var sociais = document.getElementById('btn-rede');
+    
+    document.getElementById('btn-header').addEventListener('click', function() {
+        btnText.style.display = 'none';
+    });
+}
+
+document.getElementById('btn-header').addEventListener('click', function() {
+    toggleRedesSociais();
 });
