@@ -14,15 +14,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function toggleRedesSociais() {
-    var btnText = document.getElementById('btn-header');
-    var sociais = document.getElementById('btn-rede');
-    
-    document.getElementById('btn-header').addEventListener('click', function() {
-        btnText.style.display = 'none';
-    });
+function toggleButtons() {
+    var btnHeader = document.getElementById("btn-header");
+    var btnRede = document.getElementById("btn-rede");
+
+    if (btnHeader.style.display === "block") {
+        btnHeader.style.display = "none";
+        btnRede.style.display = "block";
+    } else {
+        btnHeader.style.display = "block";
+        btnRede.style.display = "none";
+    }
 }
 
-document.getElementById('btn-header').addEventListener('click', function() {
-    toggleRedesSociais();
-});
+// document.getElementById('btn-header').addEventListener('click', function() {
+//     toggleRedesSociais();
+// });

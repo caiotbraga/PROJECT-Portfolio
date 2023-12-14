@@ -109,12 +109,27 @@ header .btn-header button {
     cursor: pointer;
 }
 
+header .btn-rede button {
+    padding: 1px 15px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--c-watercolor);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 header .btn-header button:hover {
     box-shadow: 0px 0px 8px var(--c-watercolor);
 }
 
 .btn-rede{
     display: none;
+}
+
+.btn-header{
+    display: block;
 }
 
 /*TOP OF THE SITE STYLE*/
