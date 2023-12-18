@@ -124,13 +124,24 @@ header .btn-header button:hover {
     box-shadow: 0px 0px 8px var(--c-watercolor);
 }
 
-.btn-rede{
+/*------------------------*/
+.btn-rede button {
     display: none;
 }
 
-.btn-header{
+.btn-rede button.visible {
     display: block;
 }
+
+.btn-header button {
+    display: block;
+}
+
+.btn-header button.visible {
+    display: none;
+}
+
+/*------------------------*/
 
 /*TOP OF THE SITE STYLE*/
 

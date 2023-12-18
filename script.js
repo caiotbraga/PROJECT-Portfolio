@@ -15,18 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleButtons() {
-    var btnHeader = document.getElementById("btn-header");
-    var btnRede = document.getElementById("btn-rede");
+    var btnHeader = document.querySelector(".btn-header button");
+    var btnRede = document.querySelector(".btn-rede button");
 
-    if (btnHeader.style.display === "block") {
+    if (btnHeader.style.display === "" || btnHeader.style.display === "block") {
         btnHeader.style.display = "none";
         btnRede.style.display = "block";
     } else {
         btnHeader.style.display = "block";
         btnRede.style.display = "none";
     }
-}
 
-// document.getElementById('btn-header').addEventListener('click', function() {
-//     toggleRedesSociais();
-// });
+}
