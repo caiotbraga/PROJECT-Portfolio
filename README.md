@@ -32,4 +32,5 @@ This portfolio website serves as a showcase for Caio Braga's skills, projects, a
 - Media queries were used to adjust the layout and styling for different screen sizes, ensuring a consistent user experience across devices.
 
 ### License
-This project was made by Caio Braga (github.com/caiotbraga)
+
+This project is licensed under the [MIT License](LICENSE).
