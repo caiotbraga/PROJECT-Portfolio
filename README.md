@@ -9,9 +9,6 @@
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript Badge"></a>
 </a>
 </p>
-### Overview
-
-
 
 ### CSS - style.css
 
