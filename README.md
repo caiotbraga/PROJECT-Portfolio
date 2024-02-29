@@ -1,9 +1,17 @@
-# Portfolio Documentation
+<h1 align="center">Portfolio Documentation</h2>
 
+<p align="center">This portfolio website serves as a showcase for my skills, projects, and personal information. It aims to provide visitors with an insight into my expertise as a Full Stack Developer and my passion for technology.</p>
+
+<h2 align="center">💻Technologies useds</h2>
+<p align="center">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://img.shields.io/badge/HTML-239120?logo=html5&logoColor=white" alt="HTML Badge"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white" alt="CSS Badge"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript Badge"></a>
+</a>
+</p>
 ### Overview
 
-This portfolio website serves as a showcase for Caio Braga's skills, projects, and personal information. It aims to provide visitors with an insight into Caio's expertise as a Full Stack Developer and his passion for technology.
- (Projects), and "Contato" (Contact).
+
 
 ### CSS - style.css
 
